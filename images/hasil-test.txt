@@ -1,0 +1,123 @@
+```
+
+![alt text](image-7.png) round robin
+
+```
+Server Software:        nginx/1.10.3
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /
+Document Length:        1429 bytes
+
+Concurrency Level:      75
+Time taken for tests:   3.414 seconds
+Complete requests:      1000
+Failed requests:        667
+   (Connect: 0, Receive: 0, Length: 667, Exceptions: 0)
+Total transferred:      1574000 bytes
+HTML transferred:       1428000 bytes
+Requests per second:    292.89 [#/sec] (mean)
+Time per request:       256.067 [ms] (mean)
+Time per request:       3.414 [ms] (mean, across all concurrent requests)
+Transfer rate:          450.21 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.7      0       3
+Processing:    31  105 202.7     77    3365
+Waiting:       31  105 202.6     77    3365
+Total:         33  105 202.6     77    3366
+
+Percentage of the requests served within a certain time (ms)
+  50%     77
+  66%     91
+  75%     96
+  80%     98
+  90%    101
+  95%    104
+  98%   1036
+  99%   1054
+ 100%   3366 (longest request)
+```
+
+![alt text](image-8.png) least conn
+
+```
+Server Software:        nginx/1.10.3
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /
+Document Length:        1429 bytes
+
+Concurrency Level:      75
+Time taken for tests:   2.535 seconds
+Complete requests:      1000
+Failed requests:        661
+   (Connect: 0, Receive: 0, Length: 661, Exceptions: 0)
+Total transferred:      1573993 bytes
+HTML transferred:       1427993 bytes
+Requests per second:    394.42 [#/sec] (mean)
+Time per request:       190.153 [ms] (mean)
+Time per request:       2.535 [ms] (mean, across all concurrent requests)
+Transfer rate:          606.26 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   1.6      0      24
+Processing:    37  139 188.0    106    1587
+Waiting:       37  138 187.9    106    1587
+Total:         37  139 187.9    106    1587
+
+Percentage of the requests served within a certain time (ms)
+  50%    106
+  66%    121
+  75%    131
+  80%    141
+  90%    196
+  95%    230
+  98%   1028
+  99%   1262
+ 100%   1587 (longest request)
+```
+
+![alt text](image-9.png) ip hash
+
+```
+Server Software:        nginx/1.10.3
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /
+Document Length:        1429 bytes
+
+Concurrency Level:      75
+Time taken for tests:   2.704 seconds
+Complete requests:      1000
+Failed requests:        0
+Total transferred:      1575000 bytes
+HTML transferred:       1429000 bytes
+Requests per second:    369.80 [#/sec] (mean)
+Time per request:       202.811 [ms] (mean)
+Time per request:       2.704 [ms] (mean, across all concurrent requests)
+Transfer rate:          568.79 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.8      0       5
+Processing:    14  148 196.7    102    1150
+Waiting:       14  148 196.7    102    1150
+Total:         18  148 196.6    102    1150
+
+Percentage of the requests served within a certain time (ms)
+  50%    102
+  66%    111
+  75%    124
+  80%    131
+  90%    144
+  95%    379
+  98%   1105
+  99%   1120
+ 100%   1150 (longest request)
+```

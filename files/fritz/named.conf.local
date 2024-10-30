@@ -1,0 +1,4 @@
+zone "eldia.it17.com" {
+	type master;
+	file "/etc/bind/it17/eldia.it17.com";
+};

@@ -7,6 +7,10 @@
 | Athalla Barka Fadhil        | 5027231018 |
 | Jody Hezekiah Tanasa Sagala | 5027221050 |
 
+## TOPOLOGY
+<img width="1061" alt="image" src="https://github.com/user-attachments/assets/6ba970b2-eb2a-422e-9716-7a7d702838ad">
+
+
 ## PARADIS
 
 ```
